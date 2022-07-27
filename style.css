@@ -1,0 +1,17 @@
+.slide-items {
+  margin-top: 100px;
+}
+@media (max-width: 575.98px) {
+  .carousel-item .item-description h1 {
+    font-size: 20px;
+  }
+  .carousel-item .item-description p {
+    font-size: 12px;
+  }
+  .carousel-item .item-button {
+    font-size: 10px;
+  }
+  .carousel-item .item-description {
+    padding: 0%;
+  }
+}
