@@ -323,13 +323,13 @@
         <div class="row row-cols-1">
             <div class="col">
               <div class="card h-100 border-0">
-                <div class="d-flex flex-md-row flex-column">
+                <div class="d-flex flex-md-row flex-column bg-info bg-opacity-10">
                   <img
                     src="images/working.png"
-                    class="card-img-top w-50 rounded-0"
+                    class="card-img-top w-50 rounded-0 mx-auto"
                     alt="..."
                   />
-                  <div class="card-body d-flex p-2 p-lg-5 align-items-center bg-info bg-opacity-10">
+                  <div class="card-body d-flex p-2 p-md-4 p-lg-5 align-items-center bg-info bg-opacity-10">
                     <div>
                       <h1 class="card-title">Explore The E-learning Institute</h1>
                       <p class="card-text text-dark text-opacity-75">
@@ -591,9 +591,82 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <div class="mx-auto w-75 text-center mt-5 mb-5 d-block d-md-block d-lg-none">
+              <button type="button" class="btn btn-info text-white fw-semibold"> View All</button>
+          </div>
         </section>
         <!-- Student Feedback Section ended  -->
-      </section>
+        <!-- QnA Section Started  -->
+        <section class="mt-5 mb-5 px-1 px-md-5 mx-auto">
+          <div class="text-center">
+            <h1>Frequently Asked Questions</h1>
+            <p class="text-dark opacity-75">HTMl, CSS & Frameworks might sound difficult. That's why this QnA will give some answers of some important questions of web development</p>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  What is the difference between Flexbox and Grid?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body text-dark opacity-75">
+                  <p>The CSS Grid has been designed to do many things that Flexbox couldn’t do and Flexbox is still one of the best tools for the developers to do stuffs that Grid cannot do. Well, Grid does not handle layout for the whole page; in fact, it handles the layout for a particular container, one container on the page, and the items that are directly related to that container. Flexbox is actually great when you want to line things up in one direction. This means the calculations happen one line at a time and the browser can only process things in one dimension at a time. Grid has the ability to line things up in two directions. Grid has the power to change the order of the layout without altering the markup. Grid has some powerful features which changed the way we create layouts for the web.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  What is the difference between Bootstrap and Tailwind?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body text-dark opacity-75">
+                  <p>A website that is created in the Bootstrap framework is very responsive and flawless. On the other hand, the Tailwind framework makes a more customizable website. Bootstrap has been around for a long time and has a large community of developers. On the other hand, Tailwind is not that old, and it is constantly growing its community. Most famous companies and applications like Spotify, Lyft, and Twitter use the Bootstrap framework. On the other hand, Bazzite, BlaBlaCar, and Examples are based on Tailwind. The programming language used to develop Bootstrap is Less, Sass, JavaScript, and HTML. On the other hand, Tailwind is written using PostCSS and CSS. Bootstrap is developed by Jacob Thornton and Mark Otto, and other developers. On the other hand, Tailwind was designed by Adam Wathan.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  What is CSS Box Model?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body text-dark opacity-75">
+                  <p>very element that can be displayed on a web page is comprised of one or more rectangular boxes. CSS box model typically describes how these rectangular boxes are laid out on a web page. These boxes can have different properties and can interact with each other in different ways, but every box has a content area and optional surrounding padding, border, and margin areas. The following diagram demonstrates how the width, height, padding, border, and margin CSS properties determines how much space an element can take on a web page.</p>
+                  <div class="text-center">
+                    <img class="img-fluid my-2" src="images/css-box-model.png" alt="">
+                  </div>
+                  <p>Padding is the transparent space between the element's content and its border (or edge of the box, if it has no border), whereas margin is the transparent space around the border. Also, if an element has the background color it will be visible through its padding area. The margin area is always remain transparent, it is not affected by the element's background color, however, it causes the background color of the parent element to be seen through it.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                 What is an HTML Semantic Tag?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body text-dark opacity-75">
+                  <p>The core characteristic of a semantic element is that it clearly communicated its meaning to both the developer and the browser. These elements clearly define its content. The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages. The pages made with semantic elements are much easier to read. It has greater accessibility. It offers a better user experience.</p>
+                  <ul>
+                    <li>Header: It defines a header for a web page.</li>
+                    <li>Nav: It defines a container for navigation links.</li>
+                    <li>Section: This defines a section in a web page.</li>
+                    <li>Article: This element contains the main part, containing information about the web page.</li>
+                    <li>Aside: The Aside content is often placed as a sidebar in a document.</li>
+                    <li>Footer: It defines a footer for a document or a section.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- QnA Section Ended  -->
+      </section>  
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
