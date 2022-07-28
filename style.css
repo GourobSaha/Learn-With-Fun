@@ -4,17 +4,33 @@
 .slide-img {
   filter: brightness(50%);
 }
-@media (max-width: 575.98px) {
-  .carousel-item .item-description h1 {
+/* Responsive for Galaxy Z fold or smaller devices than 360px */
+@media (max-width: 359.98px) {
+   .item-description h1 {
+    font-size: 15px;
+  }
+   .item-description p {
+    font-size: 8px;
+  }
+   .item-button {
+    font-size: 8px;
+  }
+   .item-description {
+    padding: 0%;
+  }
+}
+/* Responsive for mobile devices */
+@media (min-width: 360px) and (max-width: 575.98px) {
+   .item-description h1 {
     font-size: 20px;
   }
-  .carousel-item .item-description p {
+   .item-description p {
     font-size: 12px;
   }
-  .carousel-item .item-button {
+   .item-button {
     font-size: 10px;
   }
-  .carousel-item .item-description {
+   .item-description {
     padding: 0%;
   }
 }
